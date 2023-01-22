@@ -39,6 +39,7 @@ const nav1 = document.getElementById('nav1')
 nav2 = document.getElementById('nav2')
 nav3 = document.getElementById('nav3')
 nav4 = document.getElementById('nav4')
+nav5 = document.getElementById('nav5')
 
 
 
@@ -61,6 +62,12 @@ nav3.onclick = function() {
   menubtn.classList.remove('uil-times')
 }
 nav4.onclick = function() {
+  menu.classList.remove('open')
+  menubtn.style.transform = 'rotate(0deg)'
+  menubtn.classList.add('uil-bars')
+  menubtn.classList.remove('uil-times')
+}
+nav5.onclick = function() {
   menu.classList.remove('open')
   menubtn.style.transform = 'rotate(0deg)'
   menubtn.classList.add('uil-bars')
